@@ -1,0 +1,3 @@
+Senior Backend Engineer — Acme Corp (Remote, US)
+We're hiring a senior backend engineer for our payments team.
+Stack: Java, Spring Boot, Postgres, Kafka. Salary: $160k-$190k base.

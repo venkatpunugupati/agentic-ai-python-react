@@ -1,0 +1,3 @@
+Facilitated Analyzed six months of customer churn data using SQL queries to uncover drop-off patterns, leading to a revamped onboarding flow that boosted retention.
+daily standups, sprint planning, and retrospective meetings across distributed product teams.
+We pay well.

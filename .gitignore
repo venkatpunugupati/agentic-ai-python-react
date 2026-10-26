@@ -1,0 +1,9 @@
+.env
+__pycache__/
+.venv/
+.venv-1/
+*.pyc
+.DS_Store
+rag/
+agent_rag.py
+memory_rag.json
