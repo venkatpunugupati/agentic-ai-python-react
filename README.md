@@ -1,7 +1,6 @@
 # Python ReAct Agent — from scratch
 
-Weeks 1–2 of an 8-week Agentic AI upskill sprint: LLM fundamentals, then
-a raw ReAct agent built from scratch — no framework. This is the
+LLM fundamentals, then a raw ReAct agent built from scratch — no framework. This is the
 reference implementation the LangChain4j and Spring AI ports were measured
 against.
 
