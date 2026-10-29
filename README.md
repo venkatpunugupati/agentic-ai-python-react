@@ -1,8 +1,6 @@
 # Python ReAct Agent — from scratch
 
-LLM fundamentals, then a raw ReAct agent built from scratch — no framework. This is the
-reference implementation the LangChain4j and Spring AI ports were measured
-against.
+LLM fundamentals, then a raw ReAct agent built from scratch — no framework.
 
 ## LLM fundamentals
 
