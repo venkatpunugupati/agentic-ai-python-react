@@ -54,7 +54,7 @@ python agent.py "count the words in 'the quick brown fox jumps over the lazy dog
 
 - First multi-tool chained run: word_count → calculator →
   get_current_time, all genuinely working.
-- Week 2 capstone acceptance task → 98, trace-verified.
+- capstone acceptance task → 98, trace-verified.
 - Three-way side-by-side (same question as the Java ports): answered 27
   with 0 tool calls — the explicit no-tool rule fired deterministically
   ("you already know: skip the tools").
