@@ -59,8 +59,4 @@ python agent.py "count the words in 'the quick brown fox jumps over the lazy dog
   with 0 tool calls — the explicit no-tool rule fired deterministically
   ("you already know: skip the tools").
 
-## Scope note
 
-The Week 4 agentic RAG build (`agent_rag.py`, `memory_rag.json`, and the
-`rag/` folder) is deliberately excluded from this repo and will live in
-its own repository later.
