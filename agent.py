@@ -87,6 +87,7 @@ def compact_memory(messages, keep_recent=4):
     return [system_msg, summary_msg] + recent_turns
   
 def calculator(expression: str) -> str:
+    """Evaluate an arithmetic expression, e.g. '240*0.15'. Args: expression (str): the arithmetic expression to evaluate."""
     if not re.fullmatch(r"[\d\s+\-*/%().]+", expression):
      return "Error: invalid characters in expression"
     try:
@@ -95,6 +96,7 @@ def calculator(expression: str) -> str:
      return f"Error: {e}"
 
 def word_count(text: str) -> str:
+    """Count the words in the given text. Args: text (str): the text to count words in."""
     return str(len(text.split()))
 def get_current_time() -> str:
    """Returns the current local date and time. Call this for any question about the current time or date. Takes no arguments, pass {}."""
@@ -413,7 +415,11 @@ def run_agent(messages, max_steps=6):
                 if name not in TOOLS:
                     observation = f"Error: unknown tool '{name}'. Available: {', '.join(TOOLS)}"
                 else:
-                    observation = TOOLS[name](**args)
+                   try:
+                       observation = TOOLS[name](**args)
+                   except Exception as e:
+                    observation = f"Error: {e}. Check the tool's arguments and retry."
+
             messages.append({"role": "user", "content": f"Observation: {observation}"})
 
     return "stopped: max steps reached"
